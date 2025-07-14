@@ -8,5 +8,10 @@
     "id": 2,
     "name": "Aditi",
     "role": "Designer"
+  },
+  {
+    "id": 3,
+    "name": "Sahil",
+    "role": "Tester"
   }
 ]
