@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Clone Repo') {
+            steps {
+                git 'https://github.com/Yash-Kalekar/TuteDude_DevOps_Assignments.git'
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
+        stage('Restart Express') {
+            steps {
+                sh 'pm2 restart express-app || pm2 start server.js --name express-app'
+            }
+        }
+    }
+}
