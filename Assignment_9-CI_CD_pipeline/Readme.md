@@ -13,4 +13,3 @@
 3. Clone and run both apps.
 4. Install Jenkins and plugins.
 5. Create Jenkins Pipelines using `Jenkinsfile`.
-6. (Optional) Configure GitHub Webhooks for auto-trigger.
